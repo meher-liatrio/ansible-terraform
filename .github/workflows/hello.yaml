@@ -1,5 +1,4 @@
 name: Hello Ansible
-
 on: [push]
 
 jobs:

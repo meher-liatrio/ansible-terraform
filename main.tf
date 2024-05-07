@@ -34,3 +34,9 @@ resource "aws_instance" "self_hosted_runner" {
   }
 }
 
+resource "null_resource" "ansible_provisioner" {
+  triggers = {
+    always_run = "${timestamp()}"
+  }
+}
+

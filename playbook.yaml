@@ -4,9 +4,9 @@
   become: yes
   vars:
     github_owner: 'meher-liatrio'
-    github_repo: 'ansible-ec2'
+    github_repo: 'ansible-terraform'
     runner_token: "{{ lookup('env','RUNNER_TOKEN') }}"
-    runner_name: 'ansible-runner'
+    runner_name: 'gh-runner'
     runner_work_dir: '_work'
     ansible_ssh_private_key_file: "~/.ssh/gh-runner-key.pem"
     ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
