@@ -2,7 +2,7 @@
 - name: Install and run GitHub self-hosted runner
   hosts: ec2host
   become: yes
-  
+
   vars:
     github_owner: 'meher-liatrio'
     github_repo: 'ansible-terraform'
@@ -65,4 +65,5 @@
       command: "./run.sh"
       args:
         chdir: "/home/{{ ansible_user }}/actions-runner"
+        
 ...
